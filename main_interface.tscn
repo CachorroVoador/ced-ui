@@ -1,0 +1,199 @@
+[gd_scene load_steps=5 format=3 uid="uid://dfqfb47b6xkeq"]
+
+[ext_resource type="Texture2D" uid="uid://drgown01hluh6" path="res://icon.svg" id="1_s53ac"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qdvtx"]
+bg_color = Color(0.341176, 0.219608, 0.807843, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_f6qhn"]
+font_size = 9
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g12ry"]
+bg_color = Color(0.462745, 0.392157, 0.945098, 1)
+expand_margin_top = 3.0
+
+[node name="main_interface" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -767.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="top_bar" type="PanelContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_qdvtx")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/top_bar"]
+layout_mode = 2
+
+[node name="principal" type="VBoxContainer" parent="VBoxContainer/top_bar/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/top_bar/HBoxContainer/principal"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 7
+texture_normal = ExtResource("1_s53ac")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/top_bar/HBoxContainer/principal"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 7
+size_flags_stretch_ratio = 0.0
+text = "Principal"
+label_settings = SubResource("LabelSettings_f6qhn")
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="graficos" type="VBoxContainer" parent="VBoxContainer/top_bar/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/top_bar/HBoxContainer/graficos"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 7
+texture_normal = ExtResource("1_s53ac")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/top_bar/HBoxContainer/graficos"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 7
+size_flags_stretch_ratio = 0.0
+text = "Gráficos"
+label_settings = SubResource("LabelSettings_f6qhn")
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="dispositivos" type="VBoxContainer" parent="VBoxContainer/top_bar/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/top_bar/HBoxContainer/dispositivos"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 7
+texture_normal = ExtResource("1_s53ac")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/top_bar/HBoxContainer/dispositivos"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 7
+size_flags_stretch_ratio = 0.0
+text = "Dispositivos"
+label_settings = SubResource("LabelSettings_f6qhn")
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="notificações" type="VBoxContainer" parent="VBoxContainer/top_bar/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/top_bar/HBoxContainer/notificações"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 7
+texture_normal = ExtResource("1_s53ac")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/top_bar/HBoxContainer/notificações"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 7
+size_flags_stretch_ratio = 0.0
+text = "Notificações"
+label_settings = SubResource("LabelSettings_f6qhn")
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="configurações" type="VBoxContainer" parent="VBoxContainer/top_bar/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/top_bar/HBoxContainer/configurações"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 7
+texture_normal = ExtResource("1_s53ac")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/top_bar/HBoxContainer/configurações"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 7
+size_flags_stretch_ratio = 0.0
+text = "Configurações"
+label_settings = SubResource("LabelSettings_f6qhn")
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="ajuda" type="VBoxContainer" parent="VBoxContainer/top_bar/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/top_bar/HBoxContainer/ajuda"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 7
+texture_normal = ExtResource("1_s53ac")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/top_bar/HBoxContainer/ajuda"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 7
+size_flags_stretch_ratio = 0.0
+text = "Ajuda e suporte"
+label_settings = SubResource("LabelSettings_f6qhn")
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="main_area" type="PanelContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 9.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_g12ry")
+
+[node name="HBoxContainer" type="VBoxContainer" parent="VBoxContainer/main_area"]
+layout_mode = 2
+alignment = 1
+
+[node name="energia_consumida" type="RichTextLabel" parent="VBoxContainer/main_area/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+text = "[center]Consumo de energia atual aproximado: [color=red][font_size=25]8.325W [/font_size] [/color] [/center]"
+fit_content = true
+scroll_active = false
+
+[node name="conta_aproximada" type="RichTextLabel" parent="VBoxContainer/main_area/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 10
+size_flags_stretch_ratio = 0.0
+bbcode_enabled = true
+text = "[center][font_size=13]A conta de luz custaria aproximadamente[/font_size] [color=red]
+[font_size=25]R$2.510[/font_size][/color][/center]"
+fit_content = true
+scroll_active = false
